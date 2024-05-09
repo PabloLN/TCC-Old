@@ -5,7 +5,7 @@
 }
 
 body {
-	background: #f6f5f7;
+	background: #2b2b2b;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -45,8 +45,8 @@ a {
 
 button {
 	border-radius: 20px;
-	border: 1px solid #FF4B2B;
-	background-color: #FF4B2B;
+	border: 1px solid #1f21a1;
+	background-color: #090794;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -70,7 +70,7 @@ button.ghost {
 }
 
 form {
-	background-color: #FFFFFF;
+	background-color: #ffffff;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -81,11 +81,13 @@ form {
 }
 
 input {
-	background-color: #eee;
+	background-color: #313131;
+	color: #FFFFFF;
 	border: none;
 	padding: 12px 15px;
 	margin: 8px 0;
 	width: 100%;
+	border-radius: 10px;
 }
 
 .container {
@@ -159,9 +161,9 @@ input {
 }
 
 .overlay {
-	background: #FF416C;
+	/* background: #FF416C; */
 	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-	background: linear-gradient(to right, #FF4B2B, #FF416C);
+	background: linear-gradient(to bottom, #059200, #003607);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
@@ -223,29 +225,4 @@ input {
 	margin: 0 5px;
 	height: 40px;
 	width: 40px;
-}
-
-footer {
-    background-color: #222;
-    color: #fff;
-    font-size: 14px;
-    bottom: 0;
-    position: fixed;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 999;
-}
-
-footer p {
-    margin: 10px 0;
-}
-
-footer i {
-    color: red;
-}
-
-footer a {
-    color: #3c97bf;
-    text-decoration: none;
 }
