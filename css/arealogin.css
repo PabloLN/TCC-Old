@@ -81,11 +81,13 @@ form {
 }
 
 input {
-	background-color: #eee;
+	background-color: #313131;
+	color: #FFFFFF;
 	border: none;
 	padding: 12px 15px;
 	margin: 8px 0;
 	width: 100%;
+	border-radius: 10px;
 }
 
 .container {
