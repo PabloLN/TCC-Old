@@ -652,7 +652,7 @@ a:focus {
 .team_section .team_container .box .detail-box h5 {
   color: #00bbf0;
   font-weight: 600;
-  position: relative;
+  
 }
 
 .team_section .team_container .box .social_box {
@@ -673,6 +673,8 @@ a:focus {
 .team_section .team_container .box .social_box a:hover {
   color: #00bbf0;
 }
+
+
 
 
 /*team section end*/
