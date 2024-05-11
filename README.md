@@ -8,7 +8,6 @@
 </ul>
 <h4>Back-end:</h4>
 <ul>
-<li>node.js ou Bun</li>
 <li>PHP</li>
 <li></li>
 </ul>
