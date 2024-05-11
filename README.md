@@ -9,7 +9,6 @@
 <h4>Back-end:</h4>
 <ul>
 <li>PHP</li>
-<li></li>
 </ul>
 <h4>Database:</h4>
 <ul>
