@@ -4,10 +4,6 @@ body.light-theme {
     color: #000;
 }
 
-body.light-theme .navbar {
-    background-color: #fff;
-    color: #e0e0e0;
-}
 
 body.light-theme #sidebar {
     background-color: #0e2238;
