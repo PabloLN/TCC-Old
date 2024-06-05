@@ -5,7 +5,8 @@ body.light-theme {
 }
 
 body.light-theme .navbar {
-    background-color: #f5f5f5;
+    background-color: #fff;
+    color: #e0e0e0;
 }
 
 body.light-theme #sidebar {
@@ -22,7 +23,6 @@ body.light-theme .main {
 }
 
 body.light-theme .content {
-    background-color: #fff;
     color: #000;
 }
 
@@ -53,16 +53,18 @@ body.light-theme .bg-light {
 
 /* Dark theme styles */
 body.dark-theme {
-    background-color: #121212;
+    background-color: #333;
     color: #e0e0e0;
 }
 
 body.dark-theme .navbar {
     background-color: #333;
+    color: #e0e0e0;
 }
 
 body.dark-theme #sidebar {
     background-color: #1f1f1f;
+    color: #e0e0e0;
 }
 
 body.dark-theme .sidebar-link {
@@ -70,37 +72,37 @@ body.dark-theme .sidebar-link {
 }
 
 body.dark-theme .main {
-    background-color: #1f1f1f;
+    background-color: #333;
     color: #e0e0e0;
 }
 
 body.dark-theme .content {
-    background-color: #1f1f1f;
+    background-color: #333;
     color: #e0e0e0;
 }
 
 body.dark-theme .card {
-    background-color: #333;
+    background-color: #444;
     color: #e0e0e0;
-    border: 1px solid #444;
+    border: 1px solid #555;
 }
 
 body.dark-theme .card-body {
-    background-color: #333;
+    background-color: #444;
     color: #e0e0e0;
 }
 
 body.dark-theme .table {
-    background-color: #333;
+    background-color: #444;
     color: #e0e0e0;
 }
 
 body.dark-theme .table-striped > tbody > tr:nth-of-type(odd) {
-    --bs-table-accent-bg: #444;
+    --bs-table-accent-bg: #555;
 }
 
 body.dark-theme .bg-light {
-    background-color: #333 !important;
+    background-color: #444 !important;
     color: #e0e0e0;
 }
 
