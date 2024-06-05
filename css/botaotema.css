@@ -5,8 +5,7 @@ body.light-theme {
 }
 
 body.light-theme .navbar {
-    background-color: #333;
-    color: #e0e0e0;
+    background-color: #f5f5f5;
 }
 
 body.light-theme #sidebar {
@@ -60,7 +59,6 @@ body.dark-theme {
 
 body.dark-theme .navbar {
     background-color: #333;
-    color: #e0e0e0;
 }
 
 body.dark-theme #sidebar {
