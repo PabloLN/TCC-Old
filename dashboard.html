@@ -29,8 +29,8 @@
             <ul class="sidebar-nav">
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link">
-                        <i class="lni lni-user"></i>
-                        <span>Perfil</span>
+                        <i class="bi bi-speedometer"></i>
+                        <span>Dashboard</span>
                     </a>
                 </li>
 
@@ -41,7 +41,6 @@
                     </a>
                 </li>
                 
-            
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
                         data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
@@ -110,10 +109,8 @@
             </div>
         </aside>
 
-
         <div class="main">
             <nav class="navbar navbar-expand px-4 py-3">
-                
                 <div class="navbar-collapse collapse">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item dropdown">
@@ -130,112 +127,160 @@
                         </li>
                     </ul>
                 </div>
-
             </nav>
 
             <main class="content px-3 py-4" style="margin-bottom: auto;">
                 <div class="container-fluid">
                     <div class="mb-3">
-                        <h3 class="fw-bold fs-4 mb-3">Relatorios Mensais</h3>
-
-                        <div class="row">
-                            <div class="col-12 col-md-4 ">
+                        <h3 class="fw-bold fs-4 mb-3">Relatórios Mensais</h3>
+                        <div class="row g-3 mb-4">
+                            <div class="col-12 col-md-3">
                                 <div class="card border-0 bg-light">
-                                    <div class="card-body py-4">
-                                        <h5 class="mb-2 fw-bold">
-                                            Saldo Atual
-                                        </h5>
-                                        <p class="mb-2 fw-bold">
-                                            R$ 72,54
-                                        </p>
-                                        <div class="mb-0">
-                                            <span class="badge text-success me-2">
-                                                +9.0%
-                                            </span>
-                                            <span class=" fw-bold">
-                                                Desde o último mês
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-md-4">
-                                <div class="card  border-0 bg-light">
-                                    <div class="card-body py-4">
+                                    <div class="card-body py-4 d-flex flex-column align-items-center">
                                         <h5 class="mb-2 fw-bold">
                                             Receita Mensal
                                         </h5>
-                                        <p class="mb-2 fw-bold">
-                                            R$ 72,54
+                                        <p class="mb-2 fw-bold text-success">
+                                            + R$ 1.000,00
                                         </p>
-                                        <div class="mb-0">
-                                            <span class="badge text-success me-2">
-                                                +9.0%
-                                            </span>
-                                            <span class="fw-bold">
-                                                Desde o último mês
-                                            </span>
+                                        <div class="mb-0 text-center">
+                                            <span class="text-muted">Menor receita:</span>
+                                            <span class="text-success">pagamento: R$ 1.000,00</span><br>
+                                            <span class="text-muted">Maior receita:</span>
+                                            <span class="text-success">pagamento: R$ 1.000,00</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="col-12 col-md-4">
+                            <div class="col-12 col-md-3">
                                 <div class="card border-0 bg-light">
-                                    <div class="card-body py-4">
+                                    <div class="card-body py-4 d-flex flex-column align-items-center">
                                         <h5 class="mb-2 fw-bold">
                                             Despesa Mensal
                                         </h5>
-                                        <p class="mb-2 fw-bold">
-                                            R$ 72,54
+                                        <p class="mb-2 fw-bold text-danger">
+                                            - R$ 80,00
                                         </p>
-                                        <div class="mb-0">
-                                            <span class="badge text-success me-2">
-                                                +9.0%
-                                            </span>
-                                            <span class="fw-bold">
-                                                Desde o último mês
-                                            </span>
+                                        <div class="mb-0 text-center">
+                                            <span class="text-muted">Menor despesa:</span>
+                                            <span class="text-danger">conta de luz: R$ 80,00</span><br>
+                                            <span class="text-muted">Maior despesa:</span>
+                                            <span class="text-danger">conta de luz: R$ 80,00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="card border-0 bg-light">
+                                    <div class="card-body py-4 d-flex flex-column align-items-center position-relative">
+                                        <h5 class="mb-2 fw-bold d-flex align-items-center">
+                                            Saldo
+                                            <button class="btn btn-icon ms-2">
+                                                <i class="bi bi-eye-slash"></i>
+                                            </button>
+                                        </h5>
+                                        <p class="mb-2 fw-bold text-success" style="font-size: 2rem;">
+                                            R$ 920,00
+                                        </p>
+                                        <div class="icon-container mb-0">
+                                            <i class="bi bi-wallet2" style="font-size: 2.5rem; color: #28a745;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="card border-0 bg-light">
+                                    <div class="card-body py-4">
+                                        <h5 class="mb-2 fw-bold">
+                                            Receita vs Despesas /Ano
+                                        </h5>
+                                        <div class="chart-container" style="height: 150px;">
+                                            <!-- Gráfico aqui -->
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <h3 class="fw-bold fs-4 my-3">Ultimas Movimentações
-                        </h3>
-                        <div class="row">
+                        <div class="container my-4">
+                            <h4 class="fw-bold text-center mb-3">Acesso Rápido</h4>
+                            <div class="row g-3 justify-content-center mb-4">
+                                <div class="col-12 col-md-3">
+                                    <button class="btn btn-outline-success w-100 d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-plus-circle me-2"></i>
+                                        Receita
+                                    </button>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <button class="btn btn-outline-danger w-100 d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-dash-circle me-2"></i>
+                                        Despesa
+                                    </button>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <button class="btn btn-outline-info w-100 d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-flag me-2"></i>
+                                        Criar Categoria
+                                    </button>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <button class="btn btn-outline-primary w-100 d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-bell me-2"></i>
+                                        Criar Lembrete
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3 class="fw-bold fs-4 my-3">Últimas 5 Movimentações</h3>
+                        <div class="row g-3 mb-4">
                             <div class="col-12">
                                 <table class="table table-striped">
                                     <thead>
                                         <tr class="highlight">
-                                            <th scope="col">#</th>
-                                            <th scope="col">First</th>
-                                            <th scope="col">Last</th>
-                                            <th scope="col">Handle</th>
+                                            <th scope="col">Descrição</th>
+                                            <th scope="col">Valor</th>
+                                            <th scope="col">Data</th>
+                                            <th scope="col">Tipo</th>
+                                            <th scope="col">Categoria</th>
+                                            <th scope="col">Ação</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <th scope="row">1</th>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
+                                            <td>pagamento</td>
+                                            <td class="text-success">R$ 1.000,00</td>
+                                            <td>08/07/2024 04:45:06</td>
+                                            <td><i class="bi bi-arrow-up-circle text-success"></i></td>
+                                            <td>Salário</td>
+                                            <td>
+                                                <button class="btn btn-warning btn-sm"><i class="bi bi-pencil"></i></button>
+                                                <button class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">2</th>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">3</th>
-                                            <td colspan="2">Larry the Bird</td>
-                                            <td>@twitter</td>
+                                            <td>conta de luz</td>
+                                            <td class="text-danger">R$ 80,00</td>
+                                            <td>08/07/2024 04:44:22</td>
+                                            <td><i class="bi bi-arrow-down-circle text-danger"></i></td>
+                                            <td>Moradia</td>
+                                            <td>
+                                                <button class="btn btn-warning btn-sm"><i class="bi bi-pencil"></i></button>
+                                                <button class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
+                                <div class="d-flex justify-content-center my-4">
+                                    <button class="btn btn-outline-success d-flex align-items-center me-3">
+                                        <i class="bi bi-plus-circle me-2"></i>
+                                        Ver Todas Entradas
+                                    </button>
+                                    <button class="btn btn-outline-danger d-flex align-items-center">
+                                        <i class="bi bi-dash-circle me-2"></i>
+                                        Ver Todas Saídas
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
