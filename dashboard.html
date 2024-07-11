@@ -8,10 +8,10 @@
     <title>MoneyControl</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/dashboard.css">
     <link rel="stylesheet" href="./css/botaotema.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Adicione esta linha para o CSS do modal -->
 </head>
 
 <body>
@@ -28,84 +28,68 @@
 
             <ul class="sidebar-nav">
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
+                    <a href="dashboard.html" class="sidebar-link">
                         <i class="bi bi-speedometer"></i>
                         <span>Dashboard</span>
                     </a>
                 </li>
 
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#multi" aria-expanded="false" aria-controls="multi">
                         <i class="bi bi-bar-chart-line"></i>
                         <span>Movimentações</span>
                     </a>
-                </li>
-                
-                <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                        data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
-                        <i class="bi bi-plus-square"></i>
-                        <span>Registros</span>
-                    </a>
-                    <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Receita</a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Despesa</a>
-                        </li>
+                    <ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item"><a href="#" class="sidebar-link">Entrada</a></li>
+                        <li class="sidebar-item"><a href="#" class="sidebar-link">Saída</a></li>
                     </ul>
                 </li>
 
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
-                        <i class="bi bi-bullseye"></i>
-                        <span>Metas</span>
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
+                        <i class="bi bi-plus-square"></i>
+                        <span>Relatórios</span>
                     </a>
+                    <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item"><a href="#" class="sidebar-link">Receitas</a></li>
+                        <li class="sidebar-item"><a href="#" class="sidebar-link">Despesas</a></li>
+                        <li class="sidebar-item"><a href="#" class="sidebar-link">Gráfico</a></li>
+                        <li class="sidebar-item"><a href="#" class="sidebar-link">Transações do dia</a></li>
+                    </ul>
                 </li>
 
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                        data-bs-target="#multi" aria-expanded="false" aria-controls="multi">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#multi" aria-expanded="false" aria-controls="multi">
+                        <i class="bi bi-bullseye"></i>
+                        <span>Metas</span>
+                    </a>
+                    <ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item"><a href="metasreceitas.html" class="sidebar-link">Receita</a></li>
+                        <li class="sidebar-item"><a href="metasdespesas.html" class="sidebar-link">Despesa</a></li>
+                    </ul>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#multi" aria-expanded="false" aria-controls="multi">
                         <i class="bi bi-bookmark-plus"></i>
                         <span>Criar Categoria</span>
                     </a>
                     <ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Receita</a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Despesa</a>
-                        </li>
+                        <li class="sidebar-item"><a href="#" class="sidebar-link">Receita</a></li>
+                        <li class="sidebar-item"><a href="#" class="sidebar-link">Despesa</a></li>
                     </ul>
                 </li>
 
-                <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
-                        <i class="lni lni-popup"></i>
-                        <span>Meus Lembretes</span>
-                    </a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
-                        <i class="lni lni-cog"></i>
-                        <span>Configurações</span>
-                    </a>
-                </li>
+                <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="lni lni-popup"></i><span>Meus Lembretes</span></a></li>
+                <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="lni lni-cog"></i><span>Configurações</span></a></li>
             </ul>
 
             <div class="sidebar-footer">
-                <a href="#" class="sidebar-link theme-toggle">
-                    <i class="bi bi-moon"></i>
-                    <span>Trocar Tema</span>
-                </a>
+                <a href="#" class="sidebar-link theme-toggle" id="theme-toggle"><i class="bi bi-moon"></i><span>Trocar Tema</span></a>
             </div>
 
             <div class="sidebar-footer">
-                <a href="#" class="sidebar-link">
-                    <i class="bi bi-box-arrow-right"></i>
-                    <span>Sair</span>
-                </a>
+                <a href="arealogin.html" class="sidebar-link"><i class="bi bi-box-arrow-right"></i><span>Sair</span></a>
             </div>
         </aside>
 
@@ -115,8 +99,7 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item dropdown">
                             <a href="#" data-bs-toggle="dropdown" data-bs-target="#dropdownMenu" class="">
-                                <img src="./images/account.png" class="avatar img-fluid nav-link dropdown-toggle"
-                                    style="width: 60px; height: 60px;" alt="">
+                                <img src="./images/account.png" class="avatar img-fluid nav-link dropdown-toggle" style="width: 60px; height: 60px;" alt="">
                             </a>
                             <div class="dropdown-menu dropdown-menu-end rounded" id="dropdownMenu">
                                 <ul>
@@ -137,12 +120,8 @@
                             <div class="col-12 col-md-3">
                                 <div class="card border-0 bg-light">
                                     <div class="card-body py-4 d-flex flex-column align-items-center">
-                                        <h5 class="mb-2 fw-bold">
-                                            Receita Mensal
-                                        </h5>
-                                        <p class="mb-2 fw-bold text-success">
-                                            + R$ 1.000,00
-                                        </p>
+                                        <h5 class="mb-2 fw-bold">Receita Mensal</h5>
+                                        <p class="mb-2 fw-bold text-success">+ R$ 1.000,00</p>
                                         <div class="mb-0 text-center">
                                             <span class="text-muted">Menor receita:</span>
                                             <span class="text-success">pagamento: R$ 1.000,00</span><br>
@@ -155,12 +134,8 @@
                             <div class="col-12 col-md-3">
                                 <div class="card border-0 bg-light">
                                     <div class="card-body py-4 d-flex flex-column align-items-center">
-                                        <h5 class="mb-2 fw-bold">
-                                            Despesa Mensal
-                                        </h5>
-                                        <p class="mb-2 fw-bold text-danger">
-                                            - R$ 80,00
-                                        </p>
+                                        <h5 class="mb-2 fw-bold">Despesa Mensal</h5>
+                                        <p class="mb-2 fw-bold text-danger">- R$ 80,00</p>
                                         <div class="mb-0 text-center">
                                             <span class="text-muted">Menor despesa:</span>
                                             <span class="text-danger">conta de luz: R$ 80,00</span><br>
@@ -173,27 +148,18 @@
                             <div class="col-12 col-md-3">
                                 <div class="card border-0 bg-light">
                                     <div class="card-body py-4 d-flex flex-column align-items-center position-relative">
-                                        <h5 class="mb-2 fw-bold d-flex align-items-center">
-                                            Saldo
-                                            <button class="btn btn-icon ms-2">
-                                                <i class="bi bi-eye-slash"></i>
-                                            </button>
+                                        <h5 class="mb-2 fw-bold d-flex align-items-center">Saldo
+                                            <button class="btn btn-icon ms-2"><i class="bi bi-eye-slash"></i></button>
                                         </h5>
-                                        <p class="mb-2 fw-bold text-success" style="font-size: 2rem;">
-                                            R$ 920,00
-                                        </p>
-                                        <div class="icon-container mb-0">
-                                            <i class="bi bi-wallet2" style="font-size: 2.5rem; color: #28a745;"></i>
-                                        </div>
+                                        <p class="mb-2 fw-bold text-success" style="font-size: 2rem;">R$ 920,00</p>
+                                        <div class="icon-container mb-0"><i class="bi bi-wallet2" style="font-size: 2.5rem; color: #28a745;"></i></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12 col-md-3">
                                 <div class="card border-0 bg-light">
                                     <div class="card-body py-4">
-                                        <h5 class="mb-2 fw-bold">
-                                            Receita vs Despesas /Ano
-                                        </h5>
+                                        <h5 class="mb-2 fw-bold">Receita vs Despesas /Ano</h5>
                                         <div class="chart-container" style="height: 150px;">
                                             <!-- Gráfico aqui -->
                                         </div>
@@ -206,71 +172,147 @@
                             <h4 class="fw-bold text-center mb-3">Acesso Rápido</h4>
                             <div class="row g-3 justify-content-center mb-4">
                                 <div class="col-12 col-md-3">
-                                    <button class="btn btn-outline-success w-100 d-flex align-items-center justify-content-center">
-                                        <i class="bi bi-plus-circle me-2"></i>
-                                        Receita
-                                    </button>
+                                    <button id="criarReceitaBtn" class="btn btn-outline-success w-100 d-flex align-items-center justify-content-center"><i class="bi bi-plus-circle me-2"></i> Receita</button>
                                 </div>
                                 <div class="col-12 col-md-3">
-                                    <button class="btn btn-outline-danger w-100 d-flex align-items-center justify-content-center">
-                                        <i class="bi bi-dash-circle me-2"></i>
-                                        Despesa
-                                    </button>
+                                    <button id="criarDespesaBtn" class="btn btn-outline-danger w-100 d-flex align-items-center justify-content-center"><i class="bi bi-dash-circle me-2"></i> Despesa</button>
                                 </div>
                                 <div class="col-12 col-md-3">
-                                    <button class="btn btn-outline-info w-100 d-flex align-items-center justify-content-center">
-                                        <i class="bi bi-flag me-2"></i>
-                                        Criar Categoria
-                                    </button>
+                                    <button id="criarCategoriaBtn" class="btn btn-outline-info w-100 d-flex align-items-center justify-content-center"><i class="bi bi-flag me-2"></i> Criar Categoria</button>
                                 </div>
                                 <div class="col-12 col-md-3">
-                                    <button class="btn btn-outline-primary w-100 d-flex align-items-center justify-content-center">
-                                        <i class="bi bi-bell me-2"></i>
-                                        Criar Lembrete
-                                    </button>
+                                    <button class="btn btn-outline-primary w-100 d-flex align-items-center justify-content-center"><i class="bi bi-bell me-2"></i> Criar Lembrete</button>
                                 </div>
                             </div>
                         </div>
-                        
-                        <h3 class="fw-bold fs-4 my-3">Últimas 5 Movimentações</h3>
-                        <div class="row g-3 mb-4">
-                            <div class="col-12">
-                                <table class="table table-striped">
-                                    <thead>
-                                        <tr class="highlight">
-                                            <th scope="col">Descrição</th>
-                                            <th scope="col">Valor</th>
-                                            <th scope="col">Data</th>
-                                            <th scope="col">Tipo</th>
-                                            <th scope="col">Categoria</th>
-                                            <th scope="col">Ação</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>pagamento</td>
-                                            <td class="text-success">R$ 1.000,00</td>
-                                            <td>08/07/2024 04:45:06</td>
-                                            <td><i class="bi bi-arrow-up-circle text-success"></i></td>
-                                            <td>Salário</td>
-                                            <td>
-                                                <button class="btn btn-warning btn-sm"><i class="bi bi-pencil"></i></button>
-                                                <button class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>conta de luz</td>
-                                            <td class="text-danger">R$ 80,00</td>
-                                            <td>08/07/2024 04:44:22</td>
-                                            <td><i class="bi bi-arrow-down-circle text-danger"></i></td>
-                                            <td>Moradia</td>
-                                            <td>
-                                                <button class="btn btn-warning btn-sm"><i class="bi bi-pencil"></i></button>
-                                                <button class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+
+                        <!-- Modal para criar receita -->
+                        <div id="modalReceita" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2>Criar Receita</h2>
+                                <form>
+                                    <label for="descricao">Descrição:</label>
+                                    <input type="text" id="descricao" name="descricao" placeholder="Insira uma nova descrição">
+
+                                    <label for="valor">Valor:</label>
+                                    <input type="text" id="valor" name="valor" placeholder="Insira um novo valor">
+
+                                    <label for="data">Data:</label>
+                                    <input type="date" id="data" name="data">
+
+                                    <label for="categoria">Categoria:</label>
+                                    <select id="categoria" name="categoria">
+                                        <option value="" disabled selected>Selecione</option>
+                                        <option value="categoria1">Categoria 1</option>
+                                        <option value="categoria2">Categoria 2</option>
+                                    </select>
+
+                                    <label for="observacao">Observação:</label>
+                                    <textarea id="observacao" name="observacao" placeholder="Adicione uma observação..."></textarea>
+
+                                    <button type="submit">Adicionar</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Modal para criar despesa -->
+                        <div id="modalDespesa" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2>Criar Despesa</h2>
+                                <form>
+                                    <label for="descricaoDespesa">Descrição:</label>
+                                    <input type="text" id="descricaoDespesa" name="descricaoDespesa" placeholder="Insira uma nova descrição">
+
+                                    <label for="valorDespesa">Valor:</label>
+                                    <input type="text" id="valorDespesa" name="valorDespesa" placeholder="Insira um novo valor">
+
+                                    <label for="dataDespesa">Data:</label>
+                                    <input type="date" id="dataDespesa" name="dataDespesa">
+
+                                    <label for="categoriaDespesa">Categoria:</label>
+                                    <select id="categoriaDespesa" name="categoriaDespesa">
+                                        <option value="" disabled selected>Selecione</option>
+                                        <option value="categoria1">Categoria 1</option>
+                                        <option value="categoria2">Categoria 2</option>
+                                    </select>
+
+                                    <label for="observacaoDespesa">Observação:</label>
+                                    <textarea id="observacaoDespesa" name="observacaoDespesa" placeholder="Adicione uma observação..."></textarea>
+
+                                    <button type="submit">Adicionar</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Modal para criar categoria -->
+                        <div id="modalCategoria" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2>Criar Categoria</h2>
+                                <form>
+                                    <label for="nomeCategoria">Nome da categoria:</label>
+                                    <input type="text" id="nomeCategoria" name="nomeCategoria" placeholder="Ex: mercado">
+
+                                    <label for="tipoCategoria">Tipo:</label>
+                                    <select id="tipoCategoria" name="tipoCategoria">
+                                        <option value="" disabled selected>Selecione</option>
+                                        <option value="receita">Receita</option>
+                                        <option value="despesa">Despesa</option>
+                                    </select>
+
+                                    <label for="iconeCategoria">Ícone:</label>
+                                    <div class="icon-container">
+                                        <!-- Substitua por seus próprios ícones -->
+                                        <img src="https://cdn-icons-png.flaticon.com/512/891/891399.png" alt="Icone Exemplo">
+                                    </div>
+
+                                    <button type="submit">Adicionar</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <main class="content px-3 py-4">
+                            <h3 class="fw-bold fs-4 my-3">Últimas 5 Movimentações</h3>
+                            <div class="row g-3 mb-4">
+                                <div class="col-12">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr class="highlight">
+                                                <th scope="col">Descrição</th>
+                                                <th scope="col">Valor</th>
+                                                <th scope="col">Data</th>
+                                                <th scope="col">Tipo</th>
+                                                <th scope="col">Categoria</th>
+                                                <th scope="col">Ação</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>pagamento</td>
+                                                <td class="text-success">R$ 1.000,00</td>
+                                                <td>08/07/2024 04:45:06</td>
+                                                <td><i class="bi bi-arrow-up-circle text-success"></i></td>
+                                                <td>Salário</td>
+                                                <td>
+                                                    <button class="btn btn-warning btn-sm"><i class="bi bi-pencil"></i></button>
+                                                    <button class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>conta de luz</td>
+                                                <td class="text-danger">R$ 80,00</td>
+                                                <td>08/07/2024 04:44:22</td>
+                                                <td><i class="bi bi-arrow-down-circle text-danger"></i></td>
+                                                <td>Moradia</td>
+                                                <td>
+                                                    <button class="btn btn-warning btn-sm"><i class="bi bi-pencil"></i></button>
+                                                    <button class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 <div class="d-flex justify-content-center my-4">
                                     <button class="btn btn-outline-success d-flex align-items-center me-3">
                                         <i class="bi bi-plus-circle me-2"></i>
@@ -291,10 +333,8 @@
     
     <script src="./js/botaotema.js"></script>
     <script src="./js/dashboard.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="dashboard.js"></script> <!-- Adicione esta linha para o JS do modal -->
 </body>
 
 </html>

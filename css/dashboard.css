@@ -430,6 +430,226 @@ a.sidebar-link:hover {
     font-size: 1.5rem;
 }
 
+/* estilo modal */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#criarReceitaBtn, #criarDespesaBtn, #criarCategoriaBtn {
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#criarReceitaBtn {
+    background-color: #28a745;
+}
+
+#criarDespesaBtn {
+    background-color: #dc3545;
+}
+
+#criarCategoriaBtn {
+    background-color: #17a2b8;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.modal.show .modal-content {
+    opacity: 1;
+    transform: translateY(-50%);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.icon-container img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* parte das metas */
+
+  
+.metas-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.metas-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.metas-header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.metas-header .btn-criar-meta {
+    margin-top: 10px;
+}
+
+.metas-tabela {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.metas-tabela th,
+.metas-tabela td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.metas-tabela th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.metas-tabela td .progress-bar {
+    height: 20px;
+    background-color: #28a745;
+    border-radius: 5px;
+}
+
+.metas-tabela td .progress {
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+.metas-tabela td .icon {
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.metas-tabela td .icon-edit {
+    color: #ffc107;
+}
+
+.metas-tabela td .icon-delete {
+    color: #dc3545;
+}
+
+.legenda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.legenda div {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.legenda div span {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+
+.legenda .dentro-da-meta span {
+    background-color: yellow;
+}
+
+.legenda .meta-atingida span {
+    background-color: green;
+}
+
+.legenda .meta-ultrapassada span {
+    background-color: red;
+}
+
+
+
+
+
 
 
 
