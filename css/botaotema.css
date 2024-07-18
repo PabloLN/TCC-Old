@@ -4,7 +4,6 @@ body.light-theme {
     color: #000;
 }
 
-
 body.light-theme #sidebar {
     background-color: #0e2238;
 }
@@ -73,7 +72,6 @@ body.dark-theme .main {
 }
 
 body.dark-theme .content {
-    background-color: #333;
     color: #e0e0e0;
 }
 
@@ -91,10 +89,55 @@ body.dark-theme .card-body {
 body.dark-theme .table {
     background-color: #444;
     color: #e0e0e0;
+    border-color: #555;
+}
+
+body.dark-theme .table thead {
+    background-color: #555;
+    color: #e0e0e0;
+}
+
+body.dark-theme .table tbody tr {
+    background-color: #444;
+    color: #e0e0e0;
+}
+
+body.dark-theme .table tbody tr:nth-of-type(odd) {
+    background-color: #555;
 }
 
 body.dark-theme .table-striped > tbody > tr:nth-of-type(odd) {
     --bs-table-accent-bg: #555;
+}
+
+body.dark-theme .table th,
+body.dark-theme .table td {
+    background-color: #444;
+    color: #e0e0e0;
+    border-color: #555;
+}
+
+body.dark-theme .table .description-column {
+    background-color: #555;
+}
+
+body.dark-theme .table .value-column {
+    background-color: #666;
+}
+
+body.dark-theme .table-striped > tbody > tr:nth-of-type(odd) th.description-column,
+body.dark-theme .table-striped > tbody > tr:nth-of-type(odd) td.description-column {
+    background-color: #555;
+}
+
+body.dark-theme .table-striped > tbody > tr:nth-of-type(odd) th.value-column,
+body.dark-theme .table-striped > tbody > tr:nth-of-type(odd) td.value-column {
+    background-color: #666;
+}
+
+body.dark-theme .table thead th {
+    background-color: #555;
+    color: #e0e0e0;
 }
 
 body.dark-theme .bg-light {
@@ -110,4 +153,79 @@ body.dark-theme .bg-light {
 
 .theme-toggle {
     cursor: pointer;
+}
+
+/* Modal dark theme styles */
+body.dark-theme .modal-content {
+    background-color: #333;
+    color: #e0e0e0;
+    border: 1px solid #555;
+}
+
+body.dark-theme .modal-content label {
+    color: #e0e0e0;
+}
+
+body.dark-theme .modal-content input[type="text"],
+body.dark-theme .modal-content input[type="date"],
+body.dark-theme .modal-content select,
+body.dark-theme .modal-content textarea {
+    background-color: #444;
+    color: #e0e0e0;
+    border: 1px solid #555;
+}
+
+body.dark-theme .modal-content button[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+}
+
+/* Tema escuro metas */
+
+body.dark-theme .metas-container {
+    background-color: #444;
+    color: #e0e0e0;
+    border: 1px solid #555;
+}
+
+body.dark-theme .metas-container h1 {
+    color: #e0e0e0;
+}
+
+body.dark-theme .metas-container .legenda div {
+    color: #e0e0e0;
+}
+
+body.dark-theme .metas-container .metas-tabela {
+    background-color: #444;
+    color: #e0e0e0;
+    border-color: #555;
+}
+
+body.dark-theme .metas-container .metas-tabela th {
+    background-color: #555;
+    color: #e0e0e0;
+}
+
+body.dark-theme .metas-container .metas-tabela td {
+    background-color: #444;
+    color: #e0e0e0;
+}
+
+body.dark-theme .metas-container .metas-tabela tbody tr {
+    background-color: #444;
+    color: #e0e0e0;
+}
+
+body.dark-theme .metas-container .metas-tabela tbody tr:nth-of-type(odd) {
+    background-color: #555;
+}
+
+body.dark-theme .metas-container .metas-tabela .progress {
+    background-color: #555;
+}
+
+body.dark-theme .metas-container .metas-tabela .progress-bar {
+    background-color: #28a745; /* Cor da barra de progresso */
 }
